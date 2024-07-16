@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 #logo {
     width: 60px;
@@ -77,6 +78,7 @@ h3 {
 #second-content {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     justify-content: space-between;
     margin-left:9%;
 }
@@ -126,6 +128,34 @@ h3 {
 }
 #intro-image-container{
     padding-left:180px;
+}
+@media (max-width:778px) {
+    #second-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #second-paragraph{
+        width:93%;
+    }
+    #intro-image-container {
+        width: 90%;
+        margin-left: 0%;
+        display: flex;
+        margin-top: 2% !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding-left:0% !important;
+        margin-left:0% !important;
+    }
+
+    #Intro {
+        width: 80% !important;
+        align-self: center;
+        margin-left:0%;
+        height: 80% !important;
+        margin-left:8%;
+    }
 }
 #third {
     display: flex;
