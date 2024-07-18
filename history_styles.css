@@ -1,0 +1,100 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+
+#title {
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    background-color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--contrast);
+    font-family: var(--wp--preset--font-family--body);
+    font-size: var(--wp--preset--font-size--medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    --wp--style--root--padding-top: 0px;
+    --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+    --wp--style--root--padding-bottom: 0px;
+    --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+    font-size: 29px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    white-space: nowrap;
+}
+
+#header #title {
+    display: flex;
+}
+
+#header #link {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    padding-right: 7%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    white-space: nowrap;
+    margin-left: 2%;
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 405;
+    font-style: normal;
+    font-size: 17px;
+    float: right;
+}
+
+#title-block h1 {
+    font-size: 3em;
+    font-family: "times new roman", sans-serif;
+    font-weight: 100;
+}
+
+.main-body {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-body h2 {
+    font-size: 2em;
+    font-family: "times new roman";
+}
+
+.main-body p {
+    font-size: 1.2em;
+    font-family: "times new roman";
+    line-height: 130%;
+}
