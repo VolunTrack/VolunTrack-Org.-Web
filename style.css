@@ -38,6 +38,28 @@ html, body {
     font-weight: 500;
     font-style: normal;
 }
+
+#footer-title {
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 0;
+    background-color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--contrast);
+    font-family: var(--wp--preset--font-family--body);
+    font-size: var(--wp--preset--font-size--medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    --wp--style--root--padding-top: 0px;
+    --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+    --wp--style--root--padding-bottom: 0px;
+    --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 #ourhistory {
     margin-right: 8%;
 }
@@ -179,15 +201,18 @@ h3 {
 }
 #contact-info{
     margin-left:500px;
+    height: 250px;
 }
 #inslogo img{
     height:8%;
+    margin-right: 10px;
 }
 #inlogo img{
     height:8%;
 }
 #inlogo {
     margin-left:4.5%;
+    margin-right: 10px;
 }
 #githublogo img{
     height:8%;
@@ -195,12 +220,77 @@ h3 {
 #githublogo {
     margin-left:5%;
 }
-#footer{
-    margin-left:8%;
-    margin-left:8%;
+#footer {
+    padding: 20px 0;
+    text-align: center;
 }
-#footlogo{
-    width:7%;
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left; /* Aligns content to the left within each column */
+}
+
+.footer-column:first-child {
+    flex: 1.5; /* Makes the first column twice as wide as the others */
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Ensures that the heading text aligns to the left */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer-logo {
+    max-width: 80px;
+    height: auto; /* Ensures the height scales proportionally */
+    display: block;
+    margin: 0; /* Removes centering */
+}
+
+#footer-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 /*

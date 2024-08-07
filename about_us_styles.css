@@ -1,19 +1,11 @@
-body {
+html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
 }
 
-#body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 70%;
-    margin: 0 auto;
-}
 
 #logo {
     width: 60px;
@@ -22,6 +14,7 @@ body {
     margin-left: 7%;
     margin-top: 0.5%;
 }
+
 #title {
     display: inline-block;
     margin-top: 1%;
@@ -42,9 +35,11 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
 #ourhistory {
     margin-right: 8%;
 }
+
 .link {
     margin-left: 2%;
     margin-top: 2%;
@@ -57,33 +52,86 @@ body {
     float: right;
 }
 
-#title-block h1 {
-    font-size: 3em;
-    font-family: "times new roman", sans-serif;
-    font-weight: 100;
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-.main-body {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding: 2%;
-    background-color: #fff;
+h2 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 8%;
+}
+
+.main-content {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#image {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.main-body h2 {
-    font-size: 2em;
-    font-family: "times new roman";
+#header {
+    font-family: 'Lora', serif;
+    font-size: 3.0rem;
+    margin: 20px 0;
+    margin-bottom: 80px;
 }
 
-.main-body p {
-    font-size: 1.2em;
-    font-family: "times new roman";
-    line-height: 130%;
+.main-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    margin-top: 20px;
 }
+
+.main-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.description-container {
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.description-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.bold-text {
+    font-weight: bold;
+    text-align: left; /* Aligns the headings to the left */
+    font-family: "Lora", serif; /* Ensures consistency in font-family */
+    font-size: 1rem; /* Matches the font-size of the description text */
+    margin: 0; /* Remove any default margins */
+}
+
+.description-container h2 {
+    margin-bottom: 5px; /* Small margin below the heading */
+}
+
+.description-container p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+    margin: 0; /* Remove margins to ensure no extra space around paragraphs */
+    text-align: left; /* Aligns the paragraphs to the left */
+}
+
 
 #footer {
     padding: 20px 0;
@@ -96,7 +144,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    padding-top: 75px;
 }
 
 .footer-column {
@@ -158,3 +205,4 @@ body {
     font-size: 0.9rem;
     color: #666;
 }
+
