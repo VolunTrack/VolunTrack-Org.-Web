@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VolunTracks Org.</title>
+  <!-- Link to the external CSS stylesheet -->
+  <link rel="stylesheet" href="./our_team_styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- The link to the h2 font family-->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <!--This is the link to the h3 font family-->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- link to second paragraph title font family-->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Vesper+Libre:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--link to second paragraph text font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!--link to second paragraph end-->
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!--link to the third part "Get in Touth"-->
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!--link to the information-->
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<!-- <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Team - Voluntracks</title>
 
   <style>
     /* Simple CSS to style the page and team members */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-
-    h1 {
-      background-color: #4CAF50;
-      color: white;
-      padding: 15px 0;
-    }
-
-    .team-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .team-card {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      width: 200px;
-      margin: 10px;
-      padding: 15px;
-      text-align: center;
-    }
-
-    .team-photo {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-
-    .team-name {
-      font-weight: bold;
-      margin: 10px 0;
-    }
-
-    .team-role {
-      color: #555;
-    }
+    
   </style>
-</head>
+</head> -->
 <body>
 
   <!-- Title of the Page -->
-  <h1>Meet Our Team</h1>
+  <div>
+    <!-- Add voluntrack logo at top-left corner of the website-->
+    <img id="logo" src="./Images/voluntrack image.png " alt="This is voluntracks' logo">
+    <h1 id="title" draggable="true">VolunTrack Org.</h1>
+    <!-- Add 3 links to the top-right corner connect to other webpages-->     
+    <a class="link" id="ourhistory" href="Our history.html">Our History↗</a>
+    <a class="link" href="About us.html">About us↗</a>
+    <a class="link" href="homepage.html">Home</a>
+  </div>
 
   <!-- Container where team members will appear -->
   <div id="team-container" class="team-container"></div>
@@ -135,4 +124,45 @@
   </script>
 
 </body>
+
+<footer id="footer">
+  <div class="footer-container">
+      <div class="footer-column">
+          <img src="./Images/voluntrack image.png" alt="Voluntrack Logo" id="footer-logo">
+          <h1 id="footer-title" draggable="true">VolunTrack Org.</h1>
+          <p>
+              Connecting Futures: Empowering Youth and Communities through Innovative Volunteering.
+          </p>
+      </div>
+      <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+              <li><a href="About us.html">Team</a></li>
+              <li><a href="Our history.html">History</a></li>
+              <li><a href="Our history.html">Careers</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Privacy</h3>
+          <ul>
+              <li><a href="https://www.privacypolicies.com/live/5041e2f7-894a-4717-be5e-3c7912c9d110">Privacy Policy</a></li>
+              <li><a href="https://www.privacypolicies.com/live/5041e2f7-894a-4717-be5e-3c7912c9d110">Terms and Conditions</a></li>
+              <li><a href="Terms of Service.html">Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Social</h3>
+          <ul>
+              <li><a href="https://www.instagram.com/voluntrack/">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/voluntrackm">LinkedIn</a></li>
+              <li><a href="https://github.com/VolunTrack">Github</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-text">
+      <p>©VolunTrack Org. is a registered Canadian Not-for-profit #716778212</p>
+      <p>Copyright © 2024 VolunTrack Org.</p>
+  </div>
+</footer>
+
 </html>
