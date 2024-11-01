@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - Voluntracks</title>
+
+  <style>
+    /* Simple CSS to style the page and team members */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    h1 {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 0;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .team-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      margin: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .team-photo {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .team-name {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .team-role {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Title of the Page -->
+  <h1>Meet Our Team</h1>
+
+  <!-- Container where team members will appear -->
+  <div id="team-container" class="team-container"></div>
+
+  <!-- Script to generate team members dynamically -->
+  <script>
+    // Array with the team's information
+    const teamMembers = [
+      {
+        name: "Leo",
+        role: "",
+        photo: "",
+        description: ""
+      },
+      {
+        name: "FeiYang",
+        role: "",
+        photo: "",
+        description: ""
+      },
+      {
+        name: "Alan",
+        role: "",
+        photo: "",
+        description: ""
+      }
+    ];
+
+    // Function to display the team members
+    function showTeam() {
+      const container = document.getElementById('team-container'); // Get the container element
+
+      // Loop through each member and create a card
+      for (let i = 0; i < teamMembers.length; i++) {
+        const member = teamMembers[i]; // Get the current member
+
+        // Create a div for the member card
+        const card = document.createElement('div');
+        card.className = 'team-card';
+
+        // Create an image element for the photo
+        const photo = document.createElement('img');
+        photo.src = member.photo;
+        photo.alt = member.name + "'s photo";
+        photo.className = 'team-photo';
+
+        // Create a paragraph for the name
+        const name = document.createElement('p');
+        name.className = 'team-name';
+        name.textContent = member.name;
+
+        // Create a paragraph for the role
+        const role = document.createElement('p');
+        role.className = 'team-role';
+        role.textContent = member.role;
+
+        // Create a paragraph for the description
+        const description = document.createElement('p');
+        description.textContent = member.description;
+
+        // Add the photo, name, role, and description to the card
+        card.appendChild(photo);
+        card.appendChild(name);
+        card.appendChild(role);
+        card.appendChild(description);
+
+        // Add the card to the container
+        container.appendChild(card);
+      }
+    }
+
+    // Call the function to display the team when the page loads
+    showTeam();
+  </script>
+
+</body>
+</html>

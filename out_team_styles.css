@@ -1,0 +1,160 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+#title {
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+    background-color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--contrast);
+    font-family: var(--wp--preset--font-family--body);
+    font-size: var(--wp--preset--font-size--medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    --wp--style--root--padding-top: 0px;
+    --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+    --wp--style--root--padding-bottom: 0px;
+    --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+    font-size: 29px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#ourhistory {
+    margin-right: 8%;
+}
+.link {
+    margin-left: 2%;
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 405;
+    font-style: normal;
+    font-size: 17px;
+    float: right;
+}
+
+#title-block h1 {
+    font-size: 3em;
+    font-family: "times new roman", sans-serif;
+    font-weight: 100;
+}
+
+.main-body {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-body h2 {
+    font-size: 2em;
+    font-family: "times new roman";
+}
+
+.main-body p {
+    font-size: 1.2em;
+    font-family: "times new roman";
+    line-height: 130%;
+}
+
+#footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 75px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left; /* Aligns content to the left within each column */
+}
+
+.footer-column:first-child {
+    flex: 1.5; /* Makes the first column twice as wide as the others */
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Ensures that the heading text aligns to the left */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer-logo {
+    max-width: 80px;
+    height: auto; /* Ensures the height scales proportionally */
+    display: block;
+    margin: 0; /* Removes centering */
+}
+
+#footer-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
