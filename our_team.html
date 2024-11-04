@@ -51,78 +51,113 @@
   </div>
 
   <!-- Container where team members will appear -->
-  <div id="team-container" class="team-container"></div>
+  <div class="team-section">
+    <div class="section-header">
+      <h2>Meet Our Team</h2>
+      <p>Talented, driven, and dedicated to your success.</p>
+      <hr class="divider">
+    </div>
 
-  <!-- Script to generate team members dynamically -->
+    <div class="team-container">
+      <div class="team-grid">
+        <!-- Team Member Card 1 (Visible) -->
+        <div class="team-card">
+          <img src="./Images/members/alan-profile.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Alan Yang</h3>
+          <p class="team-role">Tech Department Director</p>
+          <p class="team-bio">John is a tech visionary with a passion for innovative solutions.</p>
+        </div>
+  
+        <!-- Team Member Card 2 (Visible) -->
+        <div class="team-card">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">John Smith</h3>
+          <p class="team-role">Chief Technology Officer</p>
+          <p class="team-bio">John is a tech visionary with a passion for innovative solutions.</p>
+        </div>
+  
+        <!-- Team Member Card 3 (Visible) -->
+        <div class="team-card">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Emily Davis</h3>
+          <p class="team-role">Marketing Director</p>
+          <p class="team-bio">Emily brings creativity and data-driven strategies to the team.</p>
+        </div>
+  
+        <!-- Team Member Card 4 (Initially Hidden) -->
+        <div class="team-card hidden">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Michael Lee</h3>
+          <p class="team-role">Product Manager</p>
+          <p class="team-bio">Michael ensures the product meets user needs with exceptional attention to detail.</p>
+        </div>
+  
+        <!-- Team Member Card 5 (Initially Hidden) -->
+        <div class="team-card hidden">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Sophia Brown</h3>
+          <p class="team-role">Lead Designer</p>
+          <p class="team-bio">Sophia's creativity drives our brand’s visual impact and user experience.</p>
+        </div>
+  
+        <!-- Team Member Card 6 (Initially Hidden) -->
+        <div class="team-card hidden">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">James Wilson</h3>
+          <p class="team-role">Operations Manager</p>
+          <p class="team-bio">James oversees daily operations and ensures our processes run smoothly.</p>
+        </div>
+  
+        <!-- Team Member Card 7 (Initially Hidden) -->
+        <div class="team-card hidden">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Olivia Martinez</h3>
+          <p class="team-role">Customer Success Manager</p>
+          <p class="team-bio">Olivia is passionate about delivering exceptional client experiences.</p>
+        </div>
+  
+        <!-- Team Member Card 8 (Initially Hidden) -->
+        <div class="team-card hidden">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Chris Johnson</h3>
+          <p class="team-role">Data Scientist</p>
+          <p class="team-bio">Chris uses data analytics to drive strategic decisions and insights.</p>
+        </div>
+  
+        <!-- Team Member Card 9 (Initially Hidden) -->
+        <div class="team-card hidden">
+          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Mia Chen</h3>
+          <p class="team-role">HR Manager</p>
+          <p class="team-bio">Mia fosters a collaborative and positive work environment for our team.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Show More Button -->
+    <button class="show-more-btn">Show More</button>
+  </div>
+
   <script>
-    // Array with the team's information
-    const teamMembers = [
-      {
-        name: "Leo",
-        role: "",
-        photo: "",
-        description: ""
-      },
-      {
-        name: "FeiYang",
-        role: "",
-        photo: "",
-        description: ""
-      },
-      {
-        name: "Alan",
-        role: "",
-        photo: "",
-        description: ""
+    // JavaScript to handle the Show More button
+    document.addEventListener("DOMContentLoaded", () => {
+      const showMoreBtn = document.querySelector('.show-more-btn');
+      const hiddenCards = document.querySelectorAll('.team-card.hidden');
+  
+      if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+          hiddenCards.forEach(card => {
+            card.classList.remove('hidden');
+          });
+  
+          // Hide the button after showing all cards
+          showMoreBtn.style.display = 'none';
+        });
       }
-    ];
-
-    // Function to display the team members
-    function showTeam() {
-      const container = document.getElementById('team-container'); // Get the container element
-
-      // Loop through each member and create a card
-      for (let i = 0; i < teamMembers.length; i++) {
-        const member = teamMembers[i]; // Get the current member
-
-        // Create a div for the member card
-        const card = document.createElement('div');
-        card.className = 'team-card';
-
-        // Create an image element for the photo
-        const photo = document.createElement('img');
-        photo.src = member.photo;
-        photo.alt = member.name + "'s photo";
-        photo.className = 'team-photo';
-
-        // Create a paragraph for the name
-        const name = document.createElement('p');
-        name.className = 'team-name';
-        name.textContent = member.name;
-
-        // Create a paragraph for the role
-        const role = document.createElement('p');
-        role.className = 'team-role';
-        role.textContent = member.role;
-
-        // Create a paragraph for the description
-        const description = document.createElement('p');
-        description.textContent = member.description;
-
-        // Add the photo, name, role, and description to the card
-        card.appendChild(photo);
-        card.appendChild(name);
-        card.appendChild(role);
-        card.appendChild(description);
-
-        // Add the card to the container
-        container.appendChild(card);
-      }
-    }
-
-    // Call the function to display the team when the page loads
-    showTeam();
+    });
   </script>
+  
+  
 
 </body>
 
