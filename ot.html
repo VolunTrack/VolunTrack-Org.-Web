@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team</title>
+  <style>
+    /* General Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Section Styling */
+    .team-section {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .section-header h2 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      font-size: 1.2em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      width: 100px;
+      height: 3px;
+      background-color: #0073b1;
+      margin: 0 auto 30px;
+      border: none;
+    }
+
+    /* Team Grid Styling */
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    /* Team Card Styling */
+    .team-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      max-width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-picture {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .team-name {
+      font-size: 1.5em;
+      color: #333;
+      margin-top: 15px;
+    }
+
+    .team-role {
+      font-size: 1em;
+      color: #0073b1;
+      margin-bottom: 10px;
+    }
+
+    .team-bio {
+      font-size: 0.9em;
+      color: #666;
+      padding: 0 15px;
+      margin-bottom: 15px;
+    }
+
+    /* Hidden Class for Show More */
+    .hidden {
+      display: none;
+    }
+
+    /* Show More Button Styling */
+    .show-more-btn {
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .show-more-btn:hover {
+      background-color: #005f8a;
+    }
+  </style>
+</head>
+<body>
+  <div class="team-section">
+    <div class="section-header">
+      <h2>Meet Our Team</h2>
+      <p>Talented, driven, and dedicated to your success.</p>
+      <hr class="divider">
+    </div>
+
+    <div class="team-grid">
+      <!-- Team Member Card 1 (Visible) -->
+      <div class="team-card">
+        <img src="profile1.jpg" alt="Jane Doe" class="profile-picture">
+        <h3 class="team-name">Jane Doe</h3>
+        <p class="team-role">Chief Executive Officer</p>
+        <p class="team-bio">Jane has over 15 years of experience in the industry, leading teams to success.</p>
+      </div>
+
+      <!-- Team Member Card 2 (Visible) -->
+      <div class="team-card">
+        <img src="profile2.jpg" alt="John Smith" class="profile-picture">
+        <h3 class="team-name">John Smith</h3>
+        <p class="team-role">Chief Technology Officer</p>
+        <p class="team-bio">John is a tech visionary with a passion for innovative solutions.</p>
+      </div>
+
+      <!-- Team Member Card 3 (Visible) -->
+      <div class="team-card">
+        <img src="profile3.jpg" alt="Emily Davis" class="profile-picture">
+        <h3 class="team-name">Emily Davis</h3>
+        <p class="team-role">Marketing Director</p>
+        <p class="team-bio">Emily brings creativity and data-driven strategies to the team.</p>
+      </div>
+
+      <!-- Team Member Card 4 (Initially Hidden) -->
+      <div class="team-card hidden">
+        <img src="profile4.jpg" alt="Michael Lee" class="profile-picture">
+        <h3 class="team-name">Michael Lee</h3>
+        <p class="team-role">Product Manager</p>
+        <p class="team-bio">Michael ensures the product meets user needs with exceptional attention to detail.</p>
+      </div>
+
+      <!-- Team Member Card 5 (Initially Hidden) -->
+      <div class="team-card hidden">
+        <img src="profile5.jpg" alt="Sophia Brown" class="profile-picture">
+        <h3 class="team-name">Sophia Brown</h3>
+        <p class="team-role">Lead Designer</p>
+        <p class="team-bio">Sophia's creativity drives our brand’s visual impact and user experience.</p>
+      </div>
+
+      <!-- Team Member Card 6 (Initially Hidden) -->
+      <div class="team-card hidden">
+        <img src="profile6.jpg" alt="James Wilson" class="profile-picture">
+        <h3 class="team-name">James Wilson</h3>
+        <p class="team-role">Operations Manager</p>
+        <p class="team-bio">James oversees daily operations and ensures our processes run smoothly.</p>
+      </div>
+
+      <!-- Team Member Card 7 (Initially Hidden) -->
+      <div class="team-card hidden">
+        <img src="profile7.jpg" alt="Olivia Martinez" class="profile-picture">
+        <h3 class="team-name">Olivia Martinez</h3>
+        <p class="team-role">Customer Success Manager</p>
+        <p class="team-bio">Olivia is passionate about delivering exceptional client experiences.</p>
+      </div>
+
+      <!-- Team Member Card 8 (Initially Hidden) -->
+      <div class="team-card hidden">
+        <img src="profile8.jpg" alt="Chris Johnson" class="profile-picture">
+        <h3 class="team-name">Chris Johnson</h3>
+        <p class="team-role">Data Scientist</p>
+        <p class="team-bio">Chris uses data analytics to drive strategic decisions and insights.</p>
+      </div>
+
+      <!-- Team Member Card 9 (Initially Hidden) -->
+      <div class="team-card hidden">
+        <img src="profile9.jpg" alt="Mia Chen" class="profile-picture">
+        <h3 class="team-name">Mia Chen</h3>
+        <p class="team-role">HR Manager</p>
+        <p class="team-bio">Mia fosters a collaborative and positive work environment for our team.</p>
+      </div>
+    </div>
+
+
+    <!-- Show More Button -->
+    <button class="show-more-btn">Show More</button>
+  </div>
+
+  <script>
+    // JavaScript to handle the Show More button
+    document.addEventListener("DOMContentLoaded", () => {
+      const showMoreBtn = document.querySelector('.show-more-btn');
+      const hiddenCards = document.querySelectorAll('.team-card.hidden');
+
+      if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+          hiddenCards.forEach(card => {
+            card.classList.remove('hidden');
+          });
+          showMoreBtn.style.display = 'none'; // Hide the button after showing all cards
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
+
