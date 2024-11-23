@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VolunTrack - Combined Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #884EFE;
+            color: #FFF;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .search-bar {
+            padding: 20px;
+            text-align: center;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        .search-bar input[type="text"] {
+            width: 40%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+        }
+
+        .search-bar input[type="text"]:focus {
+            outline: none;
+            border-color: #884EFE;
+        }
+
+        .search-bar .filters {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        .filter-button {
+            position: relative;
+        }
+
+        .filter-button button {
+            background: none;
+            border: 1px solid #d9d9d9;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .filter-dropdown {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background: #FFF;
+            border: 1px solid #d9d9d9;
+            border-radius: 5px;
+            display: none;
+            padding: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .filter-dropdown label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .filter-dropdown button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #884EFE;
+            color: #FFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .filter-button:hover .filter-dropdown {
+            display: block;
+        }
+
+        .search-results-info {
+            text-align: left;
+            margin: 20px 20px 0;
+            font-size: 14px;
+            color: #757575;
+        }
+
+        .search-results {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .result-card {
+            border: 1px solid #d9d9d9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #FFF;
+        }
+
+        .result-card h3 {
+            margin-top: 0;
+            color: #884EFE;
+        }
+
+        .result-card p {
+            color: #757575;
+        }
+
+        .apply-button {
+            display: block;
+            margin: 10px 0 0;
+            text-align: center;
+            padding: 10px;
+            background-color: #884EFE;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .detailed-card {
+            border: 1px solid #d9d9d9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 600px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #FFF;
+        }
+
+        .detailed-card h3 {
+            margin-top: 0;
+            color: #884EFE;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-top: 1px solid #d9d9d9;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: #884EFE;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>VolunTrack</h1>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Our History</a>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for cities or provinces">
+        <div class="filters">
+            <div class="filter-button">
+                <button>Organization</button>
+                <div class="filter-dropdown">
+                    <label><input type="checkbox"> Red Cross</label>
+                    <label><input type="checkbox"> York Region Educational Services</label>
+                    <label><input type="checkbox"> XYZ Org</label>
+                    <label><input type="checkbox"> ABCDEFG Org</label>
+                    <button>Apply</button>
+                </div>
+            </div>
+            <div class="filter-button">
+                <button>Duration</button>
+                <div class="filter-dropdown">
+                    <label><input type="radio" name="duration" checked> No specific timeframe</label>
+                    <label><input type="radio" name="duration"> Short term 1-4 weeks</label>
+                    <label><input type="radio" name="duration"> Long term 4+ weeks</label>
+                    <button>Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-results-info">
+        300 results
+    </div>
+
+    <div class="search-results">
+        <div class="result-card">
+            <h3>2024 Summer Camp Volunteer</h3>
+            <p><strong>Organization:</strong> York Region Educational Services</p>
+            <p><strong>Location:</strong> Markham/Thornhill</p>
+            <p><strong>Category:</strong> Education and Literacy</p>
+            <p><strong>Duration:</strong> 1-4 weeks</p>
+            <p>Eco Volunteering in Wildlife & Marine Conservation. Uncover the whole big picture of our Eco-System for a better understanding of Nature & learn how to make a difference!</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+        <div class="detailed-card">
+            <h3>2024 Summer Camp Volunteer</h3>
+            <p><strong>Organization:</strong> York Region Educational Services</p>
+            <p><strong>Location:</strong> Markham/Thornhill</p>
+            <p><strong>Category:</strong> Education and Literacy</p>
+            <p><strong>Duration:</strong> 1-4 weeks</p>
+            <p>Eco Volunteering in Wildlife & Marine Conservation. Uncover the whole big picture of our Eco-System for a better understanding of Nature & learn how to make a difference!</p>
+            <p>The CSE's Community Youth Mentorship programs provide youth across Peel Region with UTM role models to develop a sense of community, identity, and preparedness to thrive!</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 VolunTrack Org. Registered Canadian Non-Profit.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Social</a>
+        </div>
+    </footer>
+</body>
+
+</html>
