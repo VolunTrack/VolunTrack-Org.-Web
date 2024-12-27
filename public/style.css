@@ -1,0 +1,470 @@
+/*
+###########################################################################
+以下是默认样式
+Default styles
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+#logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 7%;
+    margin-top: 0.5%;
+}
+#title {
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+    background-color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--contrast);
+    font-family: var(--wp--preset--font-family--body);
+    font-size: var(--wp--preset--font-size--medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    --wp--style--root--padding-top: 0px;
+    --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+    --wp--style--root--padding-bottom: 0px;
+    --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+    font-size: 29px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#footer-title {
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 0;
+    background-color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--contrast);
+    font-family: var(--wp--preset--font-family--body);
+    font-size: var(--wp--preset--font-size--medium);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    --wp--style--root--padding-top: 0px;
+    --wp--style--root--padding-right: var(--wp--preset--spacing--50);
+    --wp--style--root--padding-bottom: 0px;
+    --wp--style--root--padding-left: var(--wp--preset--spacing--50);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#ourhistory {
+    margin-right: 8%;
+}
+.link {
+    margin-left: 2%;
+    margin-top: 2%;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 405;
+    font-style: normal;
+    font-size: 17px;
+    float: right;
+}
+h2 {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.3rem;
+    margin-top: 8%;
+}
+h3 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#handsup {
+    margin-left: 8%;
+    width: 85%;
+    height: 65%;
+    padding-bottom: 10px;
+}
+#second {
+    background-color: #cfcabe;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top:100px;
+}
+#second-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    /* justify-content: space-between; */
+    width: 100%;
+    height: auto;
+    /* margin-left:9%; */
+}
+#second-paragraph {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    font-style: italic;
+}
+#second-paragraph-title {
+    font-family: "Vesper Libre", serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    /* padding-top: 8%; */
+    padding-bottom: 0;
+    margin-bottom:0;
+    margin-top: 18%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+#second-paragraph-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    line-height: 1.55;
+    font-size: 18px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+#second-paragraph-end {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+#second-paragraph-button {
+    display: inline-block;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    font-family: "Roboto", sans-serif; /* Use the Roboto font family */
+    font-size: 1rem; /* Font size */
+    border-radius: 6px; /* Rounded corners */
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 10%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+#intro-image-container{
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    align-items: center;
+    justify-content: center;
+    /* height: auto; */
+}
+#Intro {
+    /* height: 120%; */
+    border-radius: 20px;;
+    align-items: center;
+    justify-content: center;
+    max-width: 70%;
+    height: auto;
+    margin-top: 18%;
+}
+#third {
+    display: flex;
+    margin-left: 9%;
+    margin-top: 6%;
+}
+#touth {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Add some space below the title */
+}
+#thirdparagraph {
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    margin-top: 15%;
+    margin-bottom: 30px;
+}
+#contact-info{
+    margin-left:500px;
+    height: 250px;
+}
+#inslogo img{
+    height:8%;
+    margin-right: 10px;
+}
+#inlogo img{
+    height:8%;
+}
+#inlogo {
+    margin-left:4.5%;
+    margin-right: 10px;
+}
+#githublogo img{
+    height:8%;
+}
+#githublogo {
+    margin-left:5%;
+}
+#footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left; /* Aligns content to the left within each column */
+}
+
+.footer-column:first-child {
+    flex: 1.5; /* Makes the first column twice as wide as the others */
+}
+
+.footer-column h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; /* Ensures that the heading text aligns to the left */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer-logo {
+    max-width: 80px;
+    height: auto; /* Ensures the height scales proportionally */
+    display: block;
+    margin: 0; /* Removes centering */
+}
+
+#footer-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/*
+###########################################################################
+以下是响应式样式
+针对于小于600px的屏幕
+Responsive styles
+For screens smaller than 600px
+*/
+@media only screen and (max-width: 675px) {
+    #title {
+        margin-left: -9999px;
+    }
+    .link {
+        margin-left: 2%;
+        margin-top: 2%;
+        color: black;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 405;
+        font-style: normal;
+        font-size: 17px;
+        float: right;
+    }
+    #second-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+    #second-paragraph {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 20px;
+        font-style: italic;
+    }
+    #second-paragraph-title {
+        font-family: "Vesper Libre", serif;
+        font-weight: 400;
+        font-size: 2.7rem;
+        /* padding-top: 8%; */
+        padding-bottom: 0;
+        margin-bottom:0;
+        margin-top: 18%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #second-paragraph-text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        line-height: 1.55;
+        font-size: 18px;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #second-paragraph-end {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #second-paragraph-button {
+        display: inline-block;
+        background-color: #000; /* Black background */
+        color: #fff; /* White text */
+        padding: 10px 20px; /* Padding for the button */
+        text-decoration: none; /* Remove underline from the link */
+        font-family: "Roboto", sans-serif; /* Use the Roboto font family */
+        font-size: 1rem; /* Font size */
+        border-radius: 6px; /* Rounded corners */
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 10%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #intro-image-container{
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Intro {
+        width: 70%;
+        border-radius: 20px;
+        margin: 0px;
+        /* margin-top: 9%; */
+        margin-bottom: 9%;
+        margin-bottom: 80px;
+    }
+    #contact-info{
+        margin-left:auto;
+    }
+}
+
+/*
+###########################################################################
+以下是响应式样式
+针对于大于600px小于768px的屏幕
+Responsive styles
+For screens between 601px and 950px
+*/
+@media only screen and (min-width: 676px) and (max-width: 950px) {
+    #second-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+    }
+    #second-paragraph {
+        flex: 1;
+        box-sizing: border-box;
+        padding: 9%;
+        font-style: italic;
+    }
+    #second-paragraph-title {
+        font-family: "Vesper Libre", serif;
+        font-weight: 400;
+        font-size: 2.7rem;
+        /* padding-top: 8%; */
+        padding-bottom: 0;
+        margin-bottom:0;
+        margin-top: 18%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #second-paragraph-text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        line-height: 1.55;
+        font-size: 18px;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #second-paragraph-end {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #second-paragraph-button {
+        display: inline-block;
+        background-color: #000; /* Black background */
+        color: #fff; /* White text */
+        padding: 10px 20px; /* Padding for the button */
+        text-decoration: none; /* Remove underline from the link */
+        font-family: "Roboto", sans-serif; /* Use the Roboto font family */
+        font-size: 1rem; /* Font size */
+        border-radius: 6px; /* Rounded corners */
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 10%;
+        margin-left: 9%;
+        margin-right: 9%;
+    }
+    #intro-image-container{
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #Intro {
+        width: 70%;
+        border-radius: 20px;
+        margin: 0px;
+        /* margin-top: 9%; */
+        margin-bottom: 9%;
+        margin-bottom: 80px;
+    }
+    #contact-info{
+        margin-left:auto;
+    }
+}

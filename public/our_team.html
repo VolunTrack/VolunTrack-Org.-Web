@@ -46,8 +46,8 @@
     <!-- Add 3 links to the top-right corner connect to other webpages-->     
     <a class="link" id="ourhistory" href="Our history.html">Our History↗</a>
     <a class="link" href="About us.html">About Us↗</a>
-    <a class="link" href="info.html">Our Team</a>
-    <a class="link" href="homepage.html">Home↗</a>
+    <a class="link" href="our_team.html">Our Team</a>
+    <a class="link" href="index.html">Home↗</a>
   </div>
 
   <!-- Container where team members will appear -->
@@ -65,23 +65,33 @@
           <img src="./Images/members/leo-profile.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">Shuolin Yin</h3>
           <p class="team-role">Founder</p>
-          <p class="team-bio">A dedicated leader focused on empowering communities, fostering collaboration, and creating meaningful opportunities by connecting volunteers with non-profit organizations through VolunTrack.</p>
+          <p class="team-bio">
+            A visionary leader, passionate about building a community of volunteers who connect with causes... 
+            <a href="#modal1" class="read-more">Read More</a>
+          </p>        
         </div>
+              
   
         <!-- Team Member Card 2 (Visible) -->
         <div class="team-card">
-          <img src="./Images/members/alan-profile.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
-          <h3 class="team-name">Alan Yang</h3>
-          <p class="team-role">Tech Department Director</p>
-          <p class="team-bio">John is a tech visionary with a passion for innovative solutions.</p>
+          <img src="./Images/members/feiyang-profile.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Feiyang Xu</h3>
+          <p class="team-role">President</p>
+          <p class="team-bio">
+            As a passionate leader and advocate for technology-driven change, I am committed to harnessing...
+            <a href="#modal2" class="read-more">Read More</a>
+          </p>        
         </div>
   
         <!-- Team Member Card 3 (Visible) -->
         <div class="team-card">
-          <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
-          <h3 class="team-name">Emily Davis</h3>
-          <p class="team-role">Marketing Director</p>
-          <p class="team-bio">Emily brings creativity and data-driven strategies to the team.</p>
+          <img src="./Images/members/alan-profile.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
+          <h3 class="team-name">Alan Yang</h3>
+          <p class="team-role">Tech Department Director</p>
+          <p class="team-bio">
+            Undergrad Mechatronics Engineering student at UWaterloo, strive to be the best of myself...
+            <a href="#modal3" class="read-more">Read More</a>
+          </p>        
         </div>
   
         <!-- Team Member Card 4 (Initially Hidden) -->
@@ -89,7 +99,7 @@
           <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">Michael Lee</h3>
           <p class="team-role">Product Manager</p>
-          <p class="team-bio">Michael ensures the product meets user needs with exceptional attention to detail.</p>
+          <a href="#modal4" class="read-more">Read Bio</a>
         </div>
   
         <!-- Team Member Card 5 (Initially Hidden) -->
@@ -97,7 +107,7 @@
           <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">Sophia Brown</h3>
           <p class="team-role">Lead Designer</p>
-          <p class="team-bio">Sophia's creativity drives our brand’s visual impact and user experience.</p>
+          <a href="#modal5" class="read-more">Read Bio</a>
         </div>
   
         <!-- Team Member Card 6 (Initially Hidden) -->
@@ -105,7 +115,7 @@
           <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">James Wilson</h3>
           <p class="team-role">Operations Manager</p>
-          <p class="team-bio">James oversees daily operations and ensures our processes run smoothly.</p>
+          <a href="#modal6" class="read-more">Read Bio</a>
         </div>
   
         <!-- Team Member Card 7 (Initially Hidden) -->
@@ -113,7 +123,7 @@
           <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">Olivia Martinez</h3>
           <p class="team-role">Customer Success Manager</p>
-          <p class="team-bio">Olivia is passionate about delivering exceptional client experiences.</p>
+          <a href="#modal7" class="read-more">Read Bio</a>
         </div>
   
         <!-- Team Member Card 8 (Initially Hidden) -->
@@ -121,7 +131,7 @@
           <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">Chris Johnson</h3>
           <p class="team-role">Data Scientist</p>
-          <p class="team-bio">Chris uses data analytics to drive strategic decisions and insights.</p>
+          <a href="#modal8" class="read-more">Read Bio</a>
         </div>
   
         <!-- Team Member Card 9 (Initially Hidden) -->
@@ -129,7 +139,7 @@
           <img src="profile2.jpg" class="profile-picture" onerror="this.onerror=null; this.src='./Images/members/profile.png';">
           <h3 class="team-name">Mia Chen</h3>
           <p class="team-role">HR Manager</p>
-          <p class="team-bio">Mia fosters a collaborative and positive work environment for our team.</p>
+          <a href="#modal9" class="read-more">Read Bio</a>
         </div>
       </div>
     </div>
@@ -156,8 +166,81 @@
       }
     });
   </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const readMoreLinks = document.querySelectorAll('.read-more');
   
+  readMoreLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const modalId = link.getAttribute('href'); // Get modal ID from href
+      document.querySelector(modalId).style.display = 'flex'; // Open modal
+    });
+  });
   
+  // Close modal functionality
+  const closeModalLinks = document.querySelectorAll('.modal .close');
+  
+  closeModalLinks.forEach(closeLink => {
+    closeLink.addEventListener('click', (event) => {
+      event.preventDefault();
+      const modal = closeLink.closest('.modal');
+      modal.style.display = 'none'; // Close modal
+    });
+  });
+});
+
+
+  </script>
+  
+  <!-- Modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <div class="modal-left">
+        <img src="./Images/members/leo-profile.jpg" class="modal-img" alt="Shuolin Yin">
+        <h3 class="modal-name">Shuolin Yin</h3>
+        <p class="modal-role">Founder</p>
+      </div>
+      <div class="modal-right">
+        <h4>Bringing our ideals to life</h4>
+        <p>"A dedicated leader focused on empowering communities, fostering collaboration, and creating meaningful opportunities by connecting volunteers with non-profit organizations through VolunTrack."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <div class="modal-left">
+        <img src="./Images/members/feiyang-profile.jpg" class="modal-img" alt="Feiyang Xu">
+        <h3 class="modal-name">Feiyang Xu</h3>
+        <p class="modal-role">President</p>
+      </div>
+      <div class="modal-right">
+        <h4>Bringing our ideals to life</h4>
+        <p>"As a passionate leader and advocate for technology-driven change, I am committed to harnessing the power of innovation to make a meaningful difference. At VolunTrack, my mission is to inspire others, foster leadership, and explore new technologies that drive positive impact. Through this organization, I aim to connect communities, empower volunteers, and make a lasting contribution to the world around us."</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close">&times;</a>
+      <div class="modal-left">
+        <img src="./Images/members/alan-profile.jpg" class="modal-img" alt="Alan Yang">
+        <h3 class="modal-name">Alan Yang</h3>
+        <p class="modal-role">Tech Department Director</p>
+      </div>
+      <div class="modal-right">
+        <h4>Pursuing the best of myself</h4>
+        <p>"As a Mechatronics Engineering student, I want to utilize my technical skills and passion for innovation to create solutions that improve people's lives. Whether it's streamlining processes or developing new technologies, I aspire to contribute to addressing real-world challenges and making a meaningful impact for everyone." </p>
+      </div>
+    </div>
+  </div>
 
 </body>
 
